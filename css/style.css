@@ -1,9 +1,47 @@
 #banner{
-    background-image: url("img\banner.png"); 
+    background-color: rgb(163, 175, 171);
     position: relative;
     background-repeat: no-repeat;
-    height: 280px;
+    height: 170px;
     background-size: 100%;
-  
-  }
-  
+} 
+#menu ul {
+list-style-type: none;
+margin: 0;
+overflow: hidden;
+background-color: #333;
+}
+#menu li {
+float: left;
+}
+#menu li a {
+font-size: 25px;
+display: block;
+color: white;
+text-decoration: none;
+padding: 15px 50px;
+}
+
+#menu li a:hover {
+    background-color: #111;
+    font-weight: 600;
+}
+/*Celulares*/
+@media only screen and (max-width: 768px){
+    body{
+        background-color: green;
+    }
+    
+}
+/*Tabletas*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        background-color:white;
+    }
+}
+/*Desktop*/
+@media only screen and (min-width: 992px){
+    body{background-color: palevioletred;
+    }
+}
+
