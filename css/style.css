@@ -1,4 +1,9 @@
-h1, h2, h3{
-    color: green;
-}
-body{background-color: black;}
+#banner{
+    background-image: url("img\banner.png"); 
+    position: relative;
+    background-repeat: no-repeat;
+    height: 280px;
+    background-size: 100%;
+  
+  }
+  
