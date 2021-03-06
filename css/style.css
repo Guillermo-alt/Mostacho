@@ -1,47 +1,135 @@
 #banner{
-    background-color: rgb(163, 175, 171);
+    background-color:rgb(226, 223, 223);
+    /*background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);*/
     position: relative;
     background-repeat: no-repeat;
-    height: 170px;
     background-size: 100%;
 } 
-#menu ul {
-list-style-type: none;
-margin: 0;
-overflow: hidden;
-background-color: #333;
+#logo{
+    height: 180px;
+    padding-left: 5%;
+    margin-top: 10px;
+    vertical-align: bottom;
 }
-#menu li {
-float: left;
-}
-#menu li a {
-font-size: 25px;
-display: block;
-color: white;
-text-decoration: none;
-padding: 15px 50px;
-}
-
 #menu li a:hover {
     background-color: #111;
-    font-weight: 600;
 }
+
+#contenido h2{
+    text-align: center;
+}
+#contenido .info{
+
+    font-size:20px;
+}
+body{
+    background-color: rgb(241, 245, 241);
+}
+
 /*Celulares*/
-@media only screen and (max-width: 768px){
-    body{
-        background-color: green;
+@media (max-width: 768px){
+    
+
+    #menu ul {
+        list-style-type: none;
+        margin: 0;
+        overflow: hidden;
+        background-color: #333;
+     }
+    #menu li {
+        float: top;
+    }
+    #menu li a {
+        font-size: 25px;
+        display: block;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        padding: 15px 50px;
+    }
+    #contenido{
+        text-align: justify;
+        padding: 10px 50px;
+    }
+
+    #video iframe {
+        margin-top: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+        display: block;
+        width: 350px;
+        height: 230px;
     }
     
 }
 /*Tabletas*/
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    body{
-        background-color:white;
+@media (min-width: 768px) and (max-width: 992px) {
+
+    #menu ul {
+        list-style-type: none;
+        margin: 0;
+        overflow: hidden;
+        background-color: #333;
+     }
+    #menu li {
+        float: top;
     }
-}
-/*Desktop*/
-@media only screen and (min-width: 992px){
-    body{background-color: palevioletred;
+    #menu li a {
+        text-align: center;
+        font-size: 25px;
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 15px 50px;
     }
+    #contenido{
+        text-align: justify;
+        padding: 10px 170px;
+    }
+
+    #video iframe {
+        margin-top: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+        display: block;
+        width: 400px;
+        height: 250px;
+    }
+
 }
 
+
+/*Desktop*/
+@media (min-width: 992px){
+    #menu ul {
+        list-style-type: none;
+        margin: 0;
+        overflow: hidden;
+        background-color: #333;
+        display: flex;
+        justify-content: center;
+     }
+
+    #menu li a {
+        font-size: 25px;
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 15px 50px;
+    }
+    #contenido{
+        text-align: justify;
+        padding: 10px 200px;
+    }
+    #video iframe {
+        margin-top: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+        display: block;
+        width: 500px;
+        height: 315px;
+    }
+}
