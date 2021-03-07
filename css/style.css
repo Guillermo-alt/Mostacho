@@ -1,6 +1,7 @@
+
+/*Diseño general*/
 #banner{
     background-color:rgb(226, 223, 223);
-    /*background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);*/
     position: relative;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -14,7 +15,9 @@
 #menu li a:hover {
     background-color: #111;
 }
-
+#select{
+    background-color: #111;
+}
 #contenido h2{
     text-align: center;
 }
@@ -24,6 +27,76 @@
 }
 body{
     background-color: rgb(241, 245, 241);
+}
+
+/*Desktop*/
+@media (min-width: 992px){
+    #menu ul {
+        list-style-type: none;
+        margin: 0;
+        overflow: hidden;
+        background-color: #333;
+        display: flex;
+        justify-content: center;
+     }
+
+    #menu li a {
+        font-size: 25px;
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 15px 50px;
+    }
+    #contenido{
+        text-align: justify;
+        padding: 10px 200px;
+    }
+    #video iframe {
+        margin-top: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+        display: block;
+        width: 500px;
+        height: 315px;
+    }
+}
+
+/*Tabletas*/
+@media (min-width: 768px) and (max-width: 992px) {
+
+    #menu ul {
+        list-style-type: none;
+        margin: 0;
+        overflow: hidden;
+        background-color: #333;
+     }
+    #menu li {
+        float: top;
+    }
+    #menu li a {
+        text-align: center;
+        font-size: 25px;
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 15px 50px;
+    }
+    #contenido{
+        text-align: justify;
+        padding: 10px 170px;
+    }
+
+    #video iframe {
+        margin-top: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+        display: block;
+        width: 400px;
+        height: 250px;
+    }
+
 }
 
 /*Celulares*/
@@ -63,73 +136,5 @@ body{
     }
     
 }
-/*Tabletas*/
-@media (min-width: 768px) and (max-width: 992px) {
-
-    #menu ul {
-        list-style-type: none;
-        margin: 0;
-        overflow: hidden;
-        background-color: #333;
-     }
-    #menu li {
-        float: top;
-    }
-    #menu li a {
-        text-align: center;
-        font-size: 25px;
-        display: block;
-        color: white;
-        text-decoration: none;
-        padding: 15px 50px;
-    }
-    #contenido{
-        text-align: justify;
-        padding: 10px 170px;
-    }
-
-    #video iframe {
-        margin-top: 2em;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 100px;
-        display: block;
-        width: 400px;
-        height: 250px;
-    }
-
-}
 
 
-/*Desktop*/
-@media (min-width: 992px){
-    #menu ul {
-        list-style-type: none;
-        margin: 0;
-        overflow: hidden;
-        background-color: #333;
-        display: flex;
-        justify-content: center;
-     }
-
-    #menu li a {
-        font-size: 25px;
-        display: block;
-        color: white;
-        text-decoration: none;
-        padding: 15px 50px;
-    }
-    #contenido{
-        text-align: justify;
-        padding: 10px 200px;
-    }
-    #video iframe {
-        margin-top: 2em;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 100px;
-        display: block;
-        width: 500px;
-        height: 315px;
-    }
-}
