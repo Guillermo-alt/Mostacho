@@ -71,6 +71,10 @@ form{
     background-color: #111;
   }
 
+.sound{
+    width: 100%;
+    height: 130px;
+}
 
 /*Desktop*/
 @media (min-width: 992px){
