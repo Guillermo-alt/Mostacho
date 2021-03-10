@@ -32,6 +32,9 @@ body{
     background-color: rgb(241, 245, 241);
 }
 
+.info p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 form{
     color: white;
     font-size: 25px;
@@ -242,7 +245,10 @@ form{
         height: auto;
     }
     form{
-        width:300px;
+        width:250px;
+        font-size: 20px;
+         margin: 50px auto;
+         padding:20px 30px;
       }
     
 }
